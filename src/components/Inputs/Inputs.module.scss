@@ -1,0 +1,54 @@
+.wrapper {
+  position: relative;
+
+  .wrapperInput {
+    width: 100%;
+    height: 50px;
+    font: 400 16px/160% 'Inter';
+    color: #000000;
+    padding: 0px 20px 0px 55px;
+    background: #FFFFFF;
+    border: 1px solid #838383;
+    border-radius: 5px;
+
+    &::placeholder {
+      font-family: inherit;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 160%;
+      color: #838383;
+    }
+  }
+
+  .wrapperSvg {
+    position: absolute;
+    top: 14px;
+    left: 22px;
+  }
+
+  .password {
+    position: absolute;
+    right: 20px;
+    top: 18px;
+    cursor: pointer;
+  }
+
+  .button {
+    width: 100%;
+    padding: 12px 0px;
+    border-radius: 5px;
+    background: #000000;
+    margin-top: 10px;
+    font: 500 16px/160% 'Inter';
+    color: #F3F3F3;
+  }
+
+  .button:disabled {
+    background-color: #D5D5D5;
+  }
+
+  .errorMassage {
+    font: 400 12px/160% 'Inter';
+    color: #d62c54;
+  }
+}

@@ -1,0 +1,130 @@
+.editForm {
+  position: absolute;
+  padding: 30px;
+  background-color: #FFF;
+  max-width: 600px;
+  width: 100%;
+  animation-name: onCreate;
+  animation-duration: .3s;
+
+  .editFormTitle {
+    font: 500 30px/140% 'Inter';
+    color: #000000;
+    margin-bottom: 10px;
+  }
+
+  .editInputTitle {
+    font: 500 16px/160% 'Inter';
+    margin-top: 15px;
+  }
+
+  .editFormInput {
+    background: #FFFFFF;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 5px;
+    width: 100%;
+    font: 500 16px/160% 'Inter';
+  }
+
+  .editFormEmail {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #838383;
+    margin-top: 5px;
+
+    p {
+      font: 400 16px/160% 'Inter';
+      padding: 12px 20px;
+      color: #838383;
+      background: #F3F3F3;
+      border-right: 1px solid #838383;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+      }
+    }
+
+    .editEmailInput {
+      width: 100%;
+      color: #000000;
+      padding: 12px 20px;
+      font: 500 16px/160% 'Inter';
+    }
+  }
+
+  .editFormSlug {
+    background: #FFFFFF;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin-top: 5px;
+    color: #000000;
+    width: 100%;
+    font: 500 16px/160% 'Inter';
+    min-height: 154px;
+    resize: none;
+  }
+
+  .errorMassage {
+    color: #d62c54;
+    font: 400 16px/160% 'Inter';
+  }
+
+  .editFormButtons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    margin-top: 25px;
+
+    .editFormReset {
+      width: 50%;
+      padding: 12px 0px;
+      background: #FFFFFF;
+      font: 500 16px/160% 'Inter';
+      color: #000000;
+      border: 1px solid #838383;
+      border-radius: 5px;
+    }
+
+    .editFormSubmit {
+      width: 50%;
+      padding: 12px 0px;
+      border-radius: 5px;
+      background: #000000;
+      font: 500 16px/160% 'Inter';
+      color: #F3F3F3;
+
+      &:disabled {
+        background-color: #D5D5D5;
+      }
+    }
+  }
+}
+
+@keyframes onCreate {
+  from {
+    transform: scale(.50);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+@media(max-width: 600px) {
+  .editForm {
+    position: absolute;
+    padding: 30px;
+    background-color: #FFF;
+    width: 100vw;
+    height: 100vh;
+    animation-name: onCreate;
+    animation-duration: .3s;
+  }
+}

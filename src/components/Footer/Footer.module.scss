@@ -1,0 +1,15 @@
+.footer {
+  text-align: center;
+  border-top: 1px solid #E6E6E6;
+
+  .footerInner {
+    padding: 23px 0px;
+    color: #838383;
+    font: 400 16px/160% 'Inter';
+  }
+
+  .footerLink {
+    color: var(--black-color);
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --container-width: 800px;
+  --check-block-height: 28px;
+  --black-color: #000000;
+  --background-secondary: "#F3F3F3";
+  --main-font: 'Inter';
+}
+
+@media (max-width: 800px) {
+  :root {
+    --container-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  :root {
+    --container-width: 100%;
+  }
+}

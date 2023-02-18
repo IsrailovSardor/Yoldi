@@ -1,0 +1,21 @@
+.userProfile {
+  padding-bottom: 137px;
+
+  .userProfileName {
+    font: 500 30px/140% "Inter";
+    color: #000000;
+    margin: 85px 0 10px 0;
+  }
+
+  .userProfileEmail {
+    font: 400 16px/160% "Inter";
+    color: #838383;
+    margin-bottom: 30px;
+  }
+
+  .userProfileDescription {
+    font: 400 16px/160% "Inter";
+    color: #000000;
+    max-width: 600px
+  }
+}
